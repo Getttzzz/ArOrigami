@@ -183,7 +183,7 @@ class ArPlaneActivity : Activity() {
             }
 
             override fun onObject3DFailed(error: String) {
-                Log.e("Viro", " Model load failed : $error")
+                println("ArPlaneActivity.onObject3DFailed ---> error=$error")
             }
         })
 
