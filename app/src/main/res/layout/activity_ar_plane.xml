@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_hud_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="5dp"
+    tools:context="com.example.thesis.screens.SelectPlaneActivity">
+
+    <ImageView
+        android:id="@+id/ar_back_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_close" />
+
+    <LinearLayout
+        android:id="@+id/bottom_frame_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/icon_shake_phone"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_shake_phone" />
+
+        <LinearLayout
+            android:id="@+id/instructions_group"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/ar_hud_instruction_bg"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/ar_hud_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_rounded_corners"
+            android:text="Next step"
+            android:textColor="@android:color/black"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>
